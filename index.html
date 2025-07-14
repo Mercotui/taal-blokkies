@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    >
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Blokkies</title>
+</head>
+<body>
+<div class="sidebar">
+    <div class="sidebar-content">
+        <h1>Blokkies</h1>
+        <p>Deel taal automatisch op in blokjes. <a>Info</a></p>
+        <h5>Stap 1</h5>
+        <textarea id="words" aria-label="De woorden voor het blad">
+de vlinder
+het nieuws
+het schip
+de keuken
+het sprookje
+de gitaar
+het vliegtuig
+het schilderij
+de krokodil
+het geheim
+        </textarea>
+        <h5>Stap 2</h5>
+        <button id="apply-words">Toepassen</button>
+        <h5>Stap 3</h5>
+        <p>Voltooi de woorden indien dit nog niet automatisch gedaan is.</p>
+    </div>
+</div>
+<div class="content">
+    <div class="sheet">
+        <div class="sheet-column" id="example-column"></div>
+        <div class="sheet-column" id="exercise-column"></div>
+    </div>
+</div>
+
+<script type="module" src="scripts/main.mjs"></script>
+</body>
+</html>
