@@ -1,6 +1,8 @@
 // SPDX-FileCopyrightText: 2025 Menno van der Graaf <mennovandergraaf@hotmail.com>
 // SPDX-License-Identifier: MIT
 
+import {exportDocx} from "./exporter.mjs";
+
 const CLUSTERS = {
     space: [" "],
     short_vowels: ["a", "e", "i", "o", "u"],
@@ -15,6 +17,10 @@ applyWords();
 
 document.getElementById("apply-words").onclick = function () {
     applyWords();
+}
+
+document.getElementById("export-button").onclick = () => {
+    exportDocx();
 }
 
 function applyWords() {
