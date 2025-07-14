@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2025 Menno van der Graaf <mennovandergraaf@hotmail.com>
+// SPDX-License-Identifier: MIT
+
 const CLUSTERS = {
     space: [" "],
     short_vowels: ["a", "e", "i", "o", "u"],
